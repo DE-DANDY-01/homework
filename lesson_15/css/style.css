@@ -3,6 +3,7 @@
    overflow: hidden;
 }
 .header {
+   display: none; /*удалить*/
    position: relative;
    background-color: #876596;
    padding: 20px 10px ;
@@ -68,6 +69,7 @@ main{
    margin: 0px 0px 50px 0px;
 }
 .promise-to-you {
+   display: none; /*удалить*/
    background-color: #F5F5F5;
 }
 .promise-to-you__container{
@@ -168,6 +170,7 @@ main{
    margin: 0px 0px 120px 0px;
 }
 .our-services-grey {
+   display: none; /*удалить*/
 }
 .our-services-grey__container {
    max-width: 1020px;
@@ -289,6 +292,7 @@ main{
    }
 }
 .customers-grey {
+   display: none; /*удалить*/
    background-color: #F5F5F5;
    padding: 20px 0;
 
@@ -353,7 +357,7 @@ main{
    letter-spacing: 0.15px;
 }
 .wire-frame__our-impact {
-
+   display: none; /*удалить*/
    background-color: #D5D5D5;
 }
 .our-impact-grey__container {
@@ -440,6 +444,7 @@ main{
    row-gap: 30px;
 }
 .car-repair__our-promise{
+   display: none; /*удалить*/
    margin: 0px 0px 150px 0px;
 }
 .our-promise-car{
@@ -501,7 +506,8 @@ main{
    height: 450px;
    background: url(../img/colorful-car/gears-background.svg) 0 0 / 642px 450px no-repeat;
    transform: rotate(180deg);
-   top: -20px;
+   top: -5px;
+   left: -20.5%;
 }
 .our-services-colorful::after{
    content: "";
@@ -510,8 +516,8 @@ main{
    width: 642px;
    height: 450px;
    background: url(../img/colorful-car/gears-background.svg) 0 0 / 642px 450px no-repeat;
-   bottom: -20px;
-   right: 0;
+   bottom: -5px;
+   right: -20.5%;
 }
 .our-services-colorful >*:last-child{
    margin: 0px 0px 0px 0px;
@@ -593,6 +599,7 @@ main{
    min-height: 30px;
    background-color: #C40B0B;
    overflow: hidden;
+   z-index: 3;
 }
 .our-services-colorful__button a::before{
    content: "";
