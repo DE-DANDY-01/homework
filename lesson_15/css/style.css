@@ -3,7 +3,6 @@
    overflow: hidden;
 }
 .header {
-   display: none; /*удалить*/
    position: relative;
    background-color: #876596;
    padding: 20px 10px ;
@@ -69,7 +68,6 @@ main{
    margin: 0px 0px 50px 0px;
 }
 .promise-to-you {
-   display: none; /*удалить*/
    background-color: #F5F5F5;
 }
 .promise-to-you__container{
@@ -170,7 +168,6 @@ main{
    margin: 0px 0px 120px 0px;
 }
 .our-services-grey {
-   display: none; /*удалить*/
 }
 .our-services-grey__container {
    max-width: 1020px;
@@ -292,7 +289,6 @@ main{
    }
 }
 .customers-grey {
-   display: none; /*удалить*/
    background-color: #F5F5F5;
    padding: 20px 0;
 
@@ -301,12 +297,12 @@ main{
    max-width: 1020px;
    margin: 0 auto;
    display: flex;
+   flex-wrap: wrap;
    column-gap: 24px ;
 }
 .customers-grey__row {
    display: flex;
    margin: 0 -12px;
-   flex-wrap: wrap;
    row-gap: 24px;
 }
 .customers-grey__titles{
@@ -357,7 +353,6 @@ main{
    letter-spacing: 0.15px;
 }
 .wire-frame__our-impact {
-   display: none; /*удалить*/
    background-color: #D5D5D5;
 }
 .our-impact-grey__container {
@@ -444,7 +439,6 @@ main{
    row-gap: 30px;
 }
 .car-repair__our-promise{
-   display: none; /*удалить*/
    margin: 0px 0px 150px 0px;
 }
 .our-promise-car{
@@ -630,4 +624,154 @@ main{
 }
 .wire-frame__our-customers{
    margin: 0px 0px 150px 0px;
+}
+
+.apartments {
+   background-color: #242B33;
+   padding: 50px 0;
+}
+.apartments__features{
+   margin: 0px 0px 120px 0px;
+}
+.apartments > *:last-child{
+   margin: 0px 0px 0px 0px;
+}
+.features-apartments__container{
+   box-sizing: content-box;
+   position: relative;
+   padding: 0 10px;
+   max-width: 794px;
+   margin: 0 auto;
+}
+.features-apartments__container::before{
+   content: "";
+   position: absolute;
+   right: -37%;
+   top: -130px;
+   width: 301px;
+   height: 507px;
+   background: url(../img/apartments/II.svg) 0 0 / 301px 507px no-repeat ;
+}
+.apartments__features {
+   margin: 0px 0px 150px 0px;
+}
+.features-apartments__items {
+   display: flex;
+   margin: 0 -35px;
+   row-gap: 70px;
+   flex-wrap: wrap;
+}
+.features-apartments__item {
+   flex: 1 1 25%;
+   min-height: 100%;
+   padding: 0 35px;
+   min-width: 193px;
+}
+.features-apartments__content{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+}
+.features-apartments__icon {
+   min-width: 80px;
+   flex: 0 0 80px;
+   display: flex;
+   align-items: end;
+   margin: 0px 0px 53px 0px;
+}
+
+.features-apartments__icon img {
+   max-height: 100%;
+   width: 100%;
+}
+.features-apartments__info {
+   flex: 1 1 auto;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   color: white;
+   font-size: 20px;
+   font-weight: 300;
+   line-height: 1.35;
+}
+.features-apartments__info::first-letter{
+   text-transform: uppercase;
+}
+
+.apartments__our-flat {
+   font-family: "Raleway";
+}
+.our-flat-in-apartments {
+}
+.our-flat-in-apartments__container {
+   box-sizing: content-box;
+   padding: 0 20px;
+   max-width: 1100px;
+   margin: 0 auto;
+}
+.our-flat-in-apartments__title {
+   font-family: "Playfair Display";
+   color: #D4C17F;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.33333333;
+   margin: 0px 0px 100px 0px;
+}
+.our-flat-in-apartments__title::first-letter {
+   text-transform: uppercase;
+}
+.our-flat-in-apartments__items {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 -15px 50px;
+   row-gap: 30px;
+}
+.our-flat-in-apartments__item {
+   flex: 0 0 50%;
+   display: flex;
+   padding: 0 15px;
+}
+.our-flat-in-apartments__photo {
+   cursor: default;
+   position: relative;
+   max-width: 538px;
+   max-height: 320px;
+}
+.our-flat-in-apartments__photo:hover{
+   transform: translate(0, 1.5px) scale(1.03);
+}
+.our-flat-in-apartments__photo img {
+   height: 100%;
+   width: 100%;
+}
+.our-flat-in-apartments__description {
+   position: absolute;
+   color: white;
+   font-size: 24px;
+   line-height: 1.166666;
+   bottom: 13%;
+   left: 10.2%;
+   width: 100%;
+}
+.our-flat-in-apartments__description::first-letter{
+   text-transform: uppercase;
+}
+.our-flat-in-apartments__link{
+   text-transform: uppercase;
+   font-size: 20px;
+   color: #fff;
+   letter-spacing: 1px;
+   font-weight: 700;
+}
+.our-flat-in-apartments__link:hover{
+   text-decoration: underline;
+}
+footer{
+   display: flex;
+   justify-content: center;
+   padding: 15px;
+   text-transform: uppercase;
+   font-size: 35px;
+   border-top: 1px solid #000;
 }
