@@ -119,9 +119,6 @@ input:focus, textarea:focus{
 }
 
 /*------------------------------------------------------------*/
-.customer-login-main{
-}
-
 .customer-login-main__container {
    box-sizing: content-box;
    padding: 0 10px;
@@ -190,8 +187,6 @@ input:focus, textarea:focus{
 
 /*--------------------------------------------------------*/
 
-.main__summary { 
-}
 .summary {
    display: flex;
    justify-content: center;
@@ -247,7 +242,7 @@ input:focus, textarea:focus{
 .summary__fallen-list:focus{
    outline-color: #A2A6B0 ;
 }
-.radio-summary {
+.summary {
    display: flex;
    flex-direction: column;
    row-gap: 5px;
@@ -280,7 +275,7 @@ input:focus, textarea:focus{
 .radio__text::first-letter{
    text-transform: uppercase;
 }
-.radio-summary__discount-code >*:last-child {
+.summary__discount-code >*:last-child {
    margin: 0px 0px 0px 0px;
 }
 .discount-probably {
@@ -400,10 +395,6 @@ input:focus, textarea:focus{
 
 /*----------------------------------------------------------*/
 
-.main__checkout {
-}
-.checkout-main {
-}
 .checkout-main__container {
    box-sizing: content-box;
    padding:  15px;
@@ -485,8 +476,6 @@ input:focus, textarea:focus{
 
 /*----------------------------------------------------------*/
 
-.main__make-an-appointment {
-}
 .doggie-one {
    font-family: "Roboto", sans-serif;
 }
@@ -526,7 +515,7 @@ input:focus, textarea:focus{
 
 }
 .form-doggie__item {
-   flex: 1 0 50%;
+   flex: 1  50%;
    display: flex;
    justify-content: space-between;
    padding: 0 11.22px;
@@ -560,7 +549,6 @@ input:focus, textarea:focus{
 }
 .doggie-one__container textarea{
    flex: 1 0 100%;
-   min-width: 100%;
    color: white;
    line-height: 1.5;
    letter-spacing: 0.15px;
@@ -585,7 +573,7 @@ input:focus, textarea:focus{
 .form-doggie__button {
    display: flex;
    justify-content: end;
-   min-width: 100%;
+   min-width: 470px;
 }
 .form-doggie__button button{
    font-weight: 700;
