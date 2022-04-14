@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/null.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,700;0,900;1,400&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Forms</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header"></header>
+      <main class="main">
+         <div class="main__contact-us contact-us-main">
+            <div class="contact-us-main__container">
+               <h2 class="contact-us-main__title title ">Contact Us</h2>
+               <div class="contact-us-main__text">We love hearing from you, our Shop customers.
+                  Please contact us and we will make sure to get back to you as soon as we possibly can.</div>
+               <form action="" method="" class="contact-us-main__form form-for-contact-us">
+                  <div class="form-for-contact-us__items">
+                     <div class="form-for-contact-us__item text-space">
+                        <label class="text-space__label"  for="your-name-contact-us">Your Name</label>
+                        <input class="text-space__input" required id="your-name-contact-us" type="text" placeholder="your name" name="user_name_contact_us">
+                     </div>
+                     <div class="form-for-contact-us__item text-space">
+                        <label class="text-space__label"  for="email-contact-us">Your Email</label>
+                        <input class="text-space__input" required id="email-contact-us" type="email" placeholder="your email" name="user_email_contact_us">
+                     </div>
+                     <div class="from-for-contact-us__item text-space">
+                        <label class="text-space__label"  for="telephone-contact-us">Your Phone Number</label>
+                        <input class="text-space__input" required id="telephone-contact-us" type="tel" placeholder="your phone" name="user_phone_contact_us">
+                     </div>
+                  </div>
+                  <div class="form-for-contact-us__note">
+                     <label class="form-for-contact-us__label"  for="note-contact-us">What’s on your mind?</label>
+                     <textarea class="form-for-contact-us__user-text" name="contact_us_note" id="note-contact-us"></textarea>
+                  </div>
+                  <button class="form-for-contact-us__button button" type="submit" >Submit</button>
+               </form>
+            </div>
+         </div>
+         <div class="main__customer-login customer-login-main">
+            <div class="customer-login-main__container">
+               <h2 class="customer-login-main__title title">customer login</h2>
+               <form class="customer-login-main__form login-form" action="">
+                  <h2 class="login-form__title">Registered Customers</h2>
+                  <div class="login-form__text">If you have an account, sign in with your email address.</div>
+                  <div class="login-form__items">
+                     <div class="login-form__item text-space">
+                        <label class="text-space__label"  for="your-name-login">password</label>
+                        <input class="text-space__input" required id="your-name-login" type="text" placeholder="your name" name="login_name">
+                     </div>
+                     <div class="login-form__item text-space">
+                        <label class="text-space__label"  for="password-login">email</label>
+                        <input class="text-space__input" required id="password-login" type="password" placeholder="your name" name="login_password">
+                     </div>
+                  </div>
+                  <div class="login-form__actions">
+                     <button class="login-form__button button" type="submit">Sign In</button>
+                     <a href="#" class="login-form__forgot-password">Forgot Your Password?</a>
+                  </div>
+               </form>
+            </div>
+         </div>
+         <div class="main__summary summary">
+            <div class="summary__container">
+               <h2 class="summary__title title">Summary</h2>
+               <h2 class="summary__sub-title">Estimate Shipping and Tax</h2>
+               <div class="summary__text">Enter your destination to get a shipping estimate.</div>
+               <form class="summary__form">
+                  <div class="summary__items">
+                     <div class="summary__item">
+                        <div class="summary__list-body">
+                           <label class="summary__label"  for="summary-country">country</label>
+                           <select name="country" id="summary-country" class="summary__fallen-list">
+                              <option class="summary__option" value="country">Австрия</option>
+                              <option class="summary__option" value="country">Австралия</option>
+                              <option class="summary__option" value="country">Венгрия</option>
+                              <option class="summary__option" value="country">Польша</option>
+                              <option class="summary__option" value="country">Португалия</option>
+                              <option class="summary__option" selected value="country">Украина</option>
+                              <option class="summary__option" value="country">Франция</option>
+                              <option class="summary__option" value="country">Хорватия</option>
+                              <option class="summary__option" value="country">Швеция</option>
+                              <option class="summary__option" value="country">Эстония</option>
+                              <option class="summary__option" value="country">Япония</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="summary__item text-space">
+                        <label class="text-space__label"  for="region">State/Province</label>
+                        <input class="text-space__input" required id="region" type="text" placeholder="" name="user_region">
+                     </div>
+                     <div class="summary__item text-space">
+                        <label class="text-space__label"  for="postal-code">Zip/Postal Code</label>
+                        <input class="text-space__input" required id="postal-code" type="number" placeholder="" name="postal_code">
+                     </div>
+                  </div>
+                  <div class="summary__radio radio">
+                     <div class="radio__item">
+                        <label class="radio__label" for="standart-rate">Standard Rate</label>
+                        <input class="radio__input" checked name="summary_choice" type="radio">
+                        <div class="radio__text">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</div>
+                     </div>
+                     <div class="radio__item">
+                        <label class="radio__label" for="standart-rate">Pickup from store</label>
+                        <input class="radio__input" name="summary_choice" type="radio">
+                        <div class="radio__text">1234 Street Address City Address, 1234 $0.00</div>
+                     </div>
+                  </div>
+                  <div class="radio-summary__discount-code discount-probably">
+                     <h2 class="discount-probably__title"></h2>
+                     <div class="discount-probably__item text-space">
+                        <label class="text-space__label"  for="discount-code">Enter discount code</label>
+                        <input class="text-space__input" required id="discount-code" type="password" placeholder="Enter discount code" name="discount-code">
+                     </div>
+                     <a href="#" class="discount-probably__button button">Apply Discount</a>
+                  </div>
+                  <div class="summary__total total-summary">
+                     <div class="total-summary__item">
+                        <h2 class="total-summary__title">Subtotal</h2>
+                        <div class="total-summary__price">$13,047.00</div>
+                     </div>
+                     <div class="total-summary__item">
+                        <h2 class="total-summary__title">shipping</h2>
+                        <div class="total-summary__price">$21.00</div>
+                     </div>
+                     <div class="total-summary__text">(Standard Rate - Price may vary depending on the item/destination. Shop Staff will contact you.)</div>
+                     <div class="total-summary__item">
+                        <h2 class="total-summary__title">Tax</h2>
+                        <div class="total-summary__price">$1.91</div>
+                     </div>
+                     <div class="total-summary__item">
+                        <h2 class="total-summary__title">GST (10%)</h2>
+                        <div class="total-summary__price">$1.91</div>
+                     </div>
+                     <div class="total-summary__item">
+                        <h2 class="total-summary__title">Order Total</h2>
+                        <div class="total-summary__price">$13,068.00</div>
+                     </div>
+                  </div>
+                  <div class="summary__buttons buttons-set">
+                     <button type="submit" class="buttons-set__button button button_blue">Proceed to Checkout</button>
+                     <button type="submit" class="buttons-set__button button button_pay-pal"><span>Check out with</span><img src="img/pay-pal.svg" alt="лого партнёра"></button>
+                     <button type="submit" class="buttons-set__button button button_grey">Check Out with Multiple Addresses</button>
+                  </div>
+                  <div class="summary__end end-summary">
+                     <div class="end-summary__text">own it now, up to 6 months interest free <a href="#">learn more</a></div>
+                  </div>
+               </form>
+            </div>
+         </div>
+         <div class="main__checkout checkout-main">
+            <div class="checkout-main__container">
+               <div class="checkout-main__title">Shipping Address</div>
+               <form action="" class="checkout-main__form form-checkout">
+                  <div class="form-checkout__items">
+                     <div class="form-checkout__item text-space">
+                        <label class="text-space__label"  for="email-checkout">email address</label>
+                        <input class="text-space__input" required id="email-checkout" type="email" placeholder="" name="email_checkout">
+                     </div>
+                     <div class="form-checkout__warning">You can create an account after checkout.
+                     </div>
+                     <div class="form-checkout__item text-space">
+                        <label class="text-space__label"  for="first-name-checkout">first name</label>
+                        <input class="text-space__input" required id="first-name-checkout" type="text" placeholder="" name="first_name_checkout">
+                     </div>
+                     <div class="form-checkout__item text-space">
+                        <label class="text-space__label"  for="last-name-checkout">last name</label>
+                        <input class="text-space__input" required id="last-name-checkout" type="text" placeholder="" name="last_name_checkout">
+                     </div>
+                     <div class="form-checkout__item text-space">
+                        <label class="text-space__label"  for="company-checkout">company</label>
+                        <input class="text-space__input" required id="company-checkout" type="text" placeholder="" name="company_checkout">
+                     </div>
+                     <div class="form-checkout__item text-space">
+                        <label class="text-space__label"  for="street-address-checkout">street address</label>
+                        <input class="text-space__input" required id="street-address-checkout" type="text" placeholder="" name="first_address_checkout">
+                        <input class="text-space__input" required id="street-address-checkout" type="text" placeholder="" name="second_address_checkout">
+                     </div>
+                     <div class="form-checkout__item text-space">
+                        <label class="text-space__label"  for="city-checkout">password</label>
+                        <input class="text-space__input" required id="city-checkout" type="text" placeholder="" name="city_checkout">
+                     </div>
+                     <div class="form-checkout__item text-space">
+                        <label class="text-space__label"  for="region-checkout">State/Province</label>
+                        <select  class="text-space__input" name="region_checkout_select" id="region-checkout">
+                           <option selected disabled value="please_choice_region">Please, select a region, state or province</option>
+                        </select>
+                     </div>
+                     <div class="form-checkout__item text-space">
+                        <label class="text-space__label"  for="postal-code-checkout">Zip/Postal Code </label>
+                        <input class="text-space__input" required id="postal-code-checkou" type="number" placeholder="" name="postal_code_checkout">
+                     </div>
+                     <div class="form-checkout__item text-space">
+                        <label class="text-space__label"  for="country-checkout">State/Province</label>
+                        <select  class="text-space__input" name="country_checkout" id="country-checkout">
+                           <option value="Afghanistan">Afghanistan</option>
+                           <option value="Ukraine">Ukraine</option>
+                           <option selected value="United States">United States</option>
+                           <option value="Turkey">Turkey</option>
+                           <option value="Estonia">Estonia</option>
+                        </select>
+                     </div>
+                     <div class="form-checkout__item text-space">
+                        <label class="text-space__label"  for="your-phone-checkout">Phone Number</label>
+                        <input class="text-space__input" required id="your-phone-checkout" type="number" placeholder="" name="your_phone_checkout">
+                     </div>
+                  </div>
+                  <div class="form-checkout__radio radio">
+                     <div class="radio__item">
+                        <label class="radio__label" for="standart-rate">Standard Rate</label>
+                        <input class="radio__input" checked name="summary_choice" type="radio">
+                        <div class="radio__text radio__text_with-price "><span>Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</span><span>$21.00</span></div>
+                     </div>
+                     <div class="radio__item">
+                        <label class="radio__label" for="standart-rate">Pickup from store</label>
+                        <input class="radio__input" name="summary_choice" type="radio">
+                        <div class="radio__text radio__text_with-price"><span>1234 Street Adress City Address, 1234</span><span>	$0.00</span></div>
+                     </div>
+                  </div>
+                  <button type="submit" class="form-checkout__button button button_blue">Next</button>
+               </form>
+               
+
+               
+            </div>
+            
+         </div>
+         <div class="main__make-an-appointment doggie-one">
+            <div class="doggie-one__container">
+               <h2 class="doggie-one__title">Make an appointment</h2>
+               <form action="" class="doggie-one__form form-doggie">
+                  <div class="form-doggie__items">
+                     <div class="form-doggie__item">
+                        <input name="your_name_doggie" placeholder="name" type="text">
+                     </div>
+                     <div class="form-doggie__item">
+                        <input name="email_doggie" placeholder="email" type="email">
+                     </div>
+                     <div class="form-doggie__item">
+                        <input name="phone_doggie" placeholder="phone number" type="number">
+                     </div>
+                     <div class="form-doggie__item">
+                        <input name="select_service_doggie" placeholder="select service" type="text">
+                     </div>
+                  </div>
+                  <div class="form-doggie__textarea"> 
+                     <textarea placeholder="Tell us about your puppers include his/her name" name="text_area_doggie"></textarea>
+                  </div>
+                  <div class="form-doggie__button">
+                     <button type="submit"><span>Make an Appointment</span></button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </main>
+      <footer class="footer"></footer>
+   </div>
+</body>
+</html>
