@@ -15,10 +15,7 @@ main{
 .main > *:not(:last-child){
    margin: 0px 0px 120px 0px;
 }
-.main__contact-us >*:last-child {
-   margin: 0px 0px 0px 0px;
-}
-.main__contact-us {
+.contact-us-main__container {
    box-sizing: content-box;
    padding: 20px 10px 47px;
    max-width: 935px;
