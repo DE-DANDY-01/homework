@@ -1457,7 +1457,7 @@ main {
   background-color: #CACDD8;
 }
 
-.switcher__ball _active {
+.switcher__ball._active {
   background-color: #0156FF;
 }
 
