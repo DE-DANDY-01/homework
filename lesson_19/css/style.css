@@ -23,7 +23,7 @@ body {
   color: #000;
   line-height: 1;
   font-family: "Poppins";
-  font-size: 0.875rem;
+  font-size: rem(14);
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -111,11 +111,11 @@ h6 {
 */
 
 [class*=__container] {
-  max-width: 73.125rem;
+  max-width: rem(1170);
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   margin: 0 auto;
-  padding: 0 0.9375rem;
+  padding: 0 rem(15);
 }
 
 [class*=-ibg] {
