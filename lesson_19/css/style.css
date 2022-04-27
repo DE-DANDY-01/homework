@@ -1298,6 +1298,10 @@ main {
   background-image: url(../img/white-star.svg);
 }
 
+.main__delivery-to-all-regions {
+  margin: 0px 0px 63px 0px;
+}
+
 .delivery {
   background-color: black;
   padding: 70px 0;
