@@ -92,20 +92,10 @@
 .button:hover{
    text-decoration: underline;
 }
-@media (max-width:900px){
-   .top-header__logo-image img:first-child {
-      display: none;
-   }
-   .top-header__logo-image img:last-child {
-      display: inline-flex;
-   }
-}
-@media (max-width:750px){
-   .top-header__logo-image {
-      width: 41px;
-      height: 41px;
-      align-self: flex-start;
-   }
+
+@media (max-width:840px){
+
+
    .top-header__side{
       column-gap: 10px;
       flex-direction: column;
@@ -260,7 +250,6 @@ header{
 
 }
 .main__container {
-   position: relative;
    max-width: 1020px;
    margin: 0 auto;
    padding: 112px 0 169px;
@@ -293,17 +282,20 @@ header{
    width: 411px;
    align-items: end;
 }
-.main__dog {
-   position: relative;
-}
+
 .main__dog  {
    position: absolute;
-   width: 100%;
-   height: 100%;
+   width: 744px;
+   height: 490px;
    object-fit: cover;
-   top: 7.8%;
+   bottom: 0;
    z-index: 9;
-   left: -20%;
+   left: 20%;
+}
+.main__dog img{
+   position: absolute;
+   bottom: 0;
+   z-index: 5;
 }
 .main__dog::after{
    content: "";
@@ -312,18 +304,19 @@ header{
    height: 821px;
    background: url(../img/line.svg) 0 0/ 416px 821px no-repeat;
    top: -54%;
-   transform: scale(1.6,1.3);
+   transform: scale(1.6,2) rotate(5deg);
    z-index: 3;
+   left: 120%;
 }
 .main__dog::before{
    content: "";
    position: absolute;
    width: 100px;
    height: 100px;
-   background: url(../img/tennis-ball.png) 0 0/ 100px;
-   right: -300px;
-   top: 18%;
-   z-index: 4;
+   background: url(../img/tennis-ball.png) 0 0/ 100px 100px no-repeat;
+   right: -97%;
+   top: 19%;
+   z-index: 10;
 }
 .main__one {
    box-sizing: content-box;
@@ -350,7 +343,7 @@ header{
    z-index: 10;
 }
 
-@media (max-width:760px){
+@media (max-width:900px){
    .main__dog{
       display: none;
    }
