@@ -287,8 +287,9 @@ body {
   position: relative;
   width: 100%;
   min-height: 100%;
-  background: -webkit-gradient(linear, left top, right top, color-stop(13%, rgba(37, 37, 37, 0.672707)), to(rgba(37, 37, 37, 0.675508))), url(../img/bowl_of_eat.png) 0 0/100vw 100% no-repeat;
-  background: linear-gradient(90deg, rgba(37, 37, 37, 0.672707) 13%, rgba(37, 37, 37, 0.675508) 100%), url(../img/bowl_of_eat.png) 0 0/100vw 100% no-repeat;
+  background-color: #1A1A1A;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 26, 26, 0.0001)), to(#1A1A1A)), -webkit-gradient(linear, left bottom, left top, from(rgba(33, 33, 33, 0.5)), to(rgba(33, 33, 33, 0.5))), url(../img/bowl_of_eat.png) 0 0/100% no-repeat;
+  background: linear-gradient(180deg, rgba(26, 26, 26, 0.0001) 0%, #1A1A1A 100%), linear-gradient(0deg, rgba(33, 33, 33, 0.5), rgba(33, 33, 33, 0.5)), url(../img/bowl_of_eat.png) 0 0/100% no-repeat;
 }
 
 .main > *:last-child {
@@ -438,12 +439,12 @@ body {
   text-decoration: underline;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 996px) {
   .full-screen-favorite-food {
     background-image: none;
   }
   .full-screen-favorite-food__container {
-    padding: 0 0 10px 0;
+    padding-bottom: 10px;
   }
   .full-screen-favorite-food__title {
     font-size: 50px;
@@ -669,13 +670,19 @@ body {
 }
 
 .card {
-  border-radius: 6px;
   overflow: hidden;
+}
+
+.card:hover .card__photo a {
+  opacity: 1;
+  visibility: visible;
 }
 
 .card__photo {
   position: relative;
   padding: 0 0 100% 0;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
 }
 
 .card__photo img {
@@ -687,17 +694,22 @@ body {
 }
 
 .card__photo a {
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
   z-index: 2;
   width: 40px;
   height: 40px;
   top: 24px;
   right: 24px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .card__main {
   padding: 29px 30px;
   background-color: #252525;
+  border-radius: 0 0 10px 10px;
 }
 
 .card__title {
@@ -848,7 +860,7 @@ body {
   border-radius: 50%;
   top: 30px;
   right: 60px;
-  background: #0000004f url(../img/just_arrow.svg) center/12.8px 12.8px no-repeat;
+  background: #0000004f url(../img/just_arrow.svg) 50% 50%/12.8px 12.8px no-repeat;
 }
 
 .recipes__content {
@@ -857,7 +869,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 -30px;
+  margin: 0 -15px;
   row-gap: 60px;
   min-height: 100%;
 }
@@ -866,11 +878,11 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
-  padding: 0 30px;
+  padding: 0 15px;
 }
 
 .recipes__main-content {
-  padding: 90px 60px;
+  padding: 60px 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -900,6 +912,8 @@ body {
 .recipes__info {
   text-align: center;
   margin: 0px 0px 45px 0px;
+  font-size: 24px;
+  line-height: 1.666;
 }
 
 .recipes__info::first-letter {
@@ -1021,8 +1035,8 @@ body {
       flex-wrap: wrap;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  cursor: default;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .cards__item:hover {
@@ -1090,6 +1104,10 @@ body {
 @media (max-width: 450px) {
   .cards__item {
     min-width: 0px;
+    min-height: 150px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
   }
   .cards__footer {
     display: block;
