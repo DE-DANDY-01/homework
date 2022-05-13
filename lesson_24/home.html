@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220513203343">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap&_v=20220513203343" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				Добро пожаловать! Надписи, которые показывают, сколько объектов доступно к просмотру, показывают реальное количество карточек благодаря JS. <br> Спойлеры работают классно, но когда выпадающий контент зависает над блоками с фиджетами фильтров, то этот же выпадающий контент становиться прозрачным. Не знаю, с чем это связано, но очень хочу узнать. Если есть желание помочь, то тэгните где-нибудь.<div class="br"></div> Все кнопочки очистки виджетов работают. <br> Иконки для смены формы показа не работают, как необходимо, а просто меняют картинку. Да, да именно картинку, не цвет. Просто здесь я хотел потренироваться в обращении к тегам через JS. <br> При клике на карточку меняется количество просмотров, попробуйте. Тут тоже JS тренировал. Спасибо за внимание!
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__container">
+				<div class="main__filter-menu menu-filter">
+					<div class="menu-filter__counter-for-show">
+						items <span class="menu-filter__counter-showing-items">1 - 35</span> of
+						<span class="menu-filter__whole-items-count"></span>
+					</div>
+					<div data-spollers class="menu-filter__sort-spollers spollers">
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">sort by: <span>position</span></button>
+							<div class="spollers__body">
+								<a href="#" value="position" class="spollers__value">position</a>
+								<a href="#" value="cost" class="spollers__value">cost</a>
+								<a href="#" value="rating" class="spollers__value">rating</a>
+							</div>
+						</div>
+					</div>
+					<div data-spollers class="menu-filter__sort-spollers spollers">
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">show: <span>35 per page</span></button>
+							<div class="spollers__body">
+								<a href="#" value="35" class="spollers__value">35 per page</a>
+								<a href="#" value="55" class="spollers__value">55 per page</a>
+								<a href="#" value="all" class="spollers__value">all</a>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="menu-filter__three-group">
+						<img class="_active" src="img/three-group-active.svg" alt="иконка группировки объектов">
+					</a>
+					<a href="#" class="menu-filter__three-group">
+						<img src="img/three-line-group.svg" alt="иконка группировки объектов">
+					</a>
+				</div>
+				<div class="main__filter-vigets vigets-filter">
+					<div class="vigets-filter__item vigets-filter__item_custom-pcs">
+						<div class="vigets-filter__title">CUSTOM PCS</div>
+						<div class="vigets-filter__counter">(<span>30</span>)</div>
+						<a href="#" class="vigets-filter__clear">
+						</a>
+					</div>
+					<div class="vigets-filter__item vigets-filter__item_hp-comaq">
+						<div class="vigets-filter__title"><span>HP/COMPAQ PCS </span></div>
+						<div class="vigets-filter__counter">(<span>30</span>)</div>
+						<a href="#" class="vigets-filter__clear">
+						</a>
+					</div>
+					<a href="#" class="vigets-filter__button vigets-filter__item_clear">
+						clear all
+					</a>
+				</div>
+				<section class="main__items">
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_01.webp" type="image/webp"><img src="img/laptop_01.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_02.webp" type="image/webp"><img src="img/laptop_02.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_05.webp" type="image/webp"><img src="img/laptop_05.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_04.webp" type="image/webp"><img src="img/laptop_04.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_06.webp" type="image/webp"><img src="img/laptop_06.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_05.webp" type="image/webp"><img src="img/laptop_05.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_01.webp" type="image/webp"><img src="img/laptop_01.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_01.webp" type="image/webp"><img src="img/laptop_01.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_01.webp" type="image/webp"><img src="img/laptop_01.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_02.webp" type="image/webp"><img src="img/laptop_02.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_05.webp" type="image/webp"><img src="img/laptop_05.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_04.webp" type="image/webp"><img src="img/laptop_04.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_06.webp" type="image/webp"><img src="img/laptop_06.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_05.webp" type="image/webp"><img src="img/laptop_05.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_01.webp" type="image/webp"><img src="img/laptop_01.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_01.webp" type="image/webp"><img src="img/laptop_01.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_01.webp" type="image/webp"><img src="img/laptop_01.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_02.webp" type="image/webp"><img src="img/laptop_02.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_05.webp" type="image/webp"><img src="img/laptop_05.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_04.webp" type="image/webp"><img src="img/laptop_04.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_06.webp" type="image/webp"><img src="img/laptop_06.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_05.webp" type="image/webp"><img src="img/laptop_05.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_01.webp" type="image/webp"><img src="img/laptop_01.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_01.webp" type="image/webp"><img src="img/laptop_01.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_01.webp" type="image/webp"><img src="img/laptop_01.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_02.webp" type="image/webp"><img src="img/laptop_02.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_05.webp" type="image/webp"><img src="img/laptop_05.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_04.webp" type="image/webp"><img src="img/laptop_04.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_06.webp" type="image/webp"><img src="img/laptop_06.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_05.webp" type="image/webp"><img src="img/laptop_05.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_01.webp" type="image/webp"><img src="img/laptop_01.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_01.webp" type="image/webp"><img src="img/laptop_01.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_01.webp" type="image/webp"><img src="img/laptop_01.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_02.webp" type="image/webp"><img src="img/laptop_02.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_05.webp" type="image/webp"><img src="img/laptop_05.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_04.webp" type="image/webp"><img src="img/laptop_04.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_06.webp" type="image/webp"><img src="img/laptop_06.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_05.webp" type="image/webp"><img src="img/laptop_05.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_01.webp" type="image/webp"><img src="img/laptop_01.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_01.webp" type="image/webp"><img src="img/laptop_01.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_01.webp" type="image/webp"><img src="img/laptop_01.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_02.webp" type="image/webp"><img src="img/laptop_02.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_05.webp" type="image/webp"><img src="img/laptop_05.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_04.webp" type="image/webp"><img src="img/laptop_04.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_06.webp" type="image/webp"><img src="img/laptop_06.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_05.webp" type="image/webp"><img src="img/laptop_05.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_01.webp" type="image/webp"><img src="img/laptop_01.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+					<a href="#" class="main__card card">
+						<div class="card__availability">
+							<div class="card__image-availability"><img src="img/availabe.svg" alt="иконка доступности / недоступности товара"></div>
+							<div class="card__status-availability">in stocks</div>
+						</div>
+						<div class="card__item-image">
+							<picture><source srcset="img/laptop_01.webp" type="image/webp"><img src="img/laptop_01.png" alt="фото товара"></picture>
+						</div>
+						<div class="card__rating-and-views">
+							<div class="card__rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">3.6</div>
+							</div>
+							<div class="card__views">
+								reviews (<span>4</span>)
+							</div>
+						</div>
+						<h2 class="card__title">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On</h2>
+						<div class="card__old-price"><span>$499.00</span></div>
+						<div class="card__actual-price">$<span>499.00</span></div>
+					</a>
+
+
+				</section>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<script src="js/app.min.js?_v=20220513203343"></script>
+</body>
+
+</html>
