@@ -369,7 +369,7 @@ h6 {
   font-weight: 700;
   font-size: 25px;
   line-height: 1.248;
-  letter-spacing: -6%;
+  letter-spacing: -6px;
 }
 
 .header__logo::first-letter {
