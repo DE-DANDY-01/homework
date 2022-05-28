@@ -1,0 +1,22 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_2_234" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="0" width="16" height="16">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 7H16.17L10.58 1.41L12 0L20 8L12 16L10.59 14.59L16.17 9H4V7Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_2_234)">
+<g filter="url(#filter0_d_2_234)">
+<path d="M25 -5H-1V21H25V-5Z" fill="#4D4D4D"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_2_234" x="-5" y="-5" width="34" height="34" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_234"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_234" result="shape"/>
+</filter>
+</defs>
+</svg>

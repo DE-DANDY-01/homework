@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@400;700&display=swap&_v=20220528183147" rel="stylesheet">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220528183147">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo">
+					<img src="img/logo.svg" alt="логотип">
+					<img src="img/logo-text.svg" alt="логотип">
+				</a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">menu</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">recipes</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Chefs</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Contacts</a></li>
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__full-screen full-screen-main">
+				<div class="full-screen-main__image">
+					<picture><source srcset="img/bowl.webp" type="image/webp"><img src="img/bowl.png" alt="главный экран" /></picture>
+				</div>
+				<div class="full-screen-main__important-container">
+					<h1 class="full-screen-main__title">
+						Your
+						<span class="full-screen-main__bold">favorite food</span>
+						delivered <span class="full-screen-main__bold">hot & fresh</span>
+					</h1>
+					<div class="full-screen-main__description">
+						<span class="full-screen-main__uppercase">HEALTHY SWITCHER</span>
+						chefs do all the prep work, like peeling, chopping & marinating,
+						so you can cook a fresh homemade dinner in just 15 minutes.
+					</div>
+					<a href="#" class="full-screen-main__button button">order now</a>
+					<div class="full-screen-main__items">
+						<a href="#" class="full-screen-main__item">
+							<div class="full-screen-main__icon">
+								<img src="img/clock.svg" alt="иконка информации" />
+							</div>
+							<div class="full-screen-main__info">
+								Today 10:00 am - 7:00 pm
+							</div>
+							<div class="full-screen-main__action">Working hours</div>
+						</a>
+						<a href="#" class="full-screen-main__item">
+							<div class="full-screen-main__icon">
+								<img src="img/direction.svg" alt="иконка информации" />
+							</div>
+							<div class="full-screen-main__info">Velyka Vasylkivska 100</div>
+							<div class="full-screen-main__action">Get Directions</div>
+						</a>
+						<a href="tel:+380638332415" class="full-screen-main__item">
+							<div class="full-screen-main__icon">
+								<img src="img/phone.svg" alt="иконка информации" />
+							</div>
+							<div class="full-screen-main__info">+38 (063)833 24 15</div>
+							<div class="full-screen-main__action">Call Online</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="main__basics-of-healthy-food about-main">
+				<div class="about-main__container">
+					<div class="about-main__title">
+						<h2 class="about-main__background-title">about</h2>
+						<h2 class="about-main__main-title">The Basics Of Healthy Food</h2>
+					</div>
+					<div class="about-main__description">
+						In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur
+						sint ea aliquip aliquip consectetur voluptate est. Eu minim dolore
+						laboris enim mollit voluptate irure esse aliquip.
+					</div>
+					<div class="about-main__slider-container">
+						<div class="about-main__slider swiper">
+							<div class="about-main__wrapper swiper-wrapper">
+								<div class="about-main__slide swiper-slide">
+									<picture><source srcset="img/dinner_02.webp" type="image/webp"><img src="img/dinner_02.png" alt="блюдо" /></picture>
+								</div>
+								<div class="about-main__slide swiper-slide">
+									<picture><source srcset="img/dinner_01.webp" type="image/webp"><img src="img/dinner_01.png" alt="блюдо" /></picture>
+								</div>
+								<div class="about-main__slide swiper-slide">
+									<picture><source srcset="img/dinner_05.webp" type="image/webp"><img src="img/dinner_05.png" alt="блюдо" /></picture>
+								</div>
+								<div class="about-main__slide swiper-slide">
+									<picture><source srcset="img/dinner_04.webp" type="image/webp"><img src="img/dinner_04.png" alt="блюдо" /></picture>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="swiper-custom-button-prev"></button>
+						<button type="button" class="swiper-custom-button-next"></button>
+					</div>
+				</div>
+			</div>
+			<div class="main__how-it-works work-main">
+				<div class="work-main__container">
+					<div class="work-main__title title">
+						<h2 class="title__background">work</h2>
+						<div class="title__main">how it works</div>
+					</div>
+					<div class="work-main__items">
+						<a href="#" class="work-main__card">
+							<h3 class="work-main__card-title">Pick meals</h3>
+							<div class="work-main__info">
+								Choose your meals from our diverse weekly menu. Find gluten or
+								dairy free, low carb & veggie options.
+							</div>
+						</a>
+						<a href="#" class="work-main__card">
+							<h3 class="work-main__card-title">Choose how often</h3>
+							<div class="work-main__info">
+								Our team of chefs do the prep work - no more chopping,
+								measuring, or sink full of dishes!
+							</div>
+						</a>
+						<a href="#" class="work-main__card">
+							<h3 class="work-main__card-title">fast deliveries</h3>
+							<div class="work-main__info">
+								Your freshly prepped 15-min dinner kits arrive on your
+								doorstep in a refrigerated box.
+							</div>
+						</a>
+						<a href="#" class="work-main__card">
+							<h3 class="work-main__card-title">tasty meals</h3>
+							<div class="work-main__info">
+								Gobble makes cooking fast, so you have more time to unwind and
+								be with family.
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="main__dish-of-the-day dishes-main">
+				<div class="dishes-main__container">
+					<div class="dishes-main__title title">
+						<h2 class="title__background">dishes</h2>
+						<div class="title__main">Dish Of The Day</div>
+					</div>
+					<div class="dishes-main__items">
+						<div class="dishes-main__card">
+							<a href="#" class="dishes-main__picture">
+								<picture><source srcset="img/dinner_01.webp" type="image/webp"><img src="img/dinner_01.png" alt="фото блюда" /></picture>
+							</a>
+							<div class="dishes-main__text-block">
+								<h3 class="dishes-main__title-item">Featured Meal</h3>
+								<div class="dishes-main__served">
+									Served with french fries + drink
+								</div>
+								<div class="dishes-main__dinner-set">
+									Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+									whopper patty, Add Tender crisp patty and more...
+								</div>
+								<div class="dishes-main__footer">
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating" />
+												<input type="radio" class="rating__item" value="2" name="rating" />
+												<input type="radio" class="rating__item" value="3" name="rating" />
+												<input type="radio" class="rating__item" value="4" name="rating" />
+												<input type="radio" class="rating__item" value="5" name="rating" />
+											</div>
+										</div>
+									</div>
+									<div class="dishes-main__views">12</div>
+									<a href="#" class="dishes-main__button button">order</a>
+								</div>
+							</div>
+						</div>
+						<div class="dishes-main__card">
+							<a href="#" class="dishes-main__picture">
+								<picture><source srcset="img/dinner_08.webp" type="image/webp"><img src="img/dinner_08.png" alt="фото блюда" /></picture>
+							</a>
+							<div class="dishes-main__text-block">
+								<h3 class="dishes-main__title-item">Featured Meal</h3>
+								<div class="dishes-main__served">
+									Served with french fries + drink
+								</div>
+								<div class="dishes-main__dinner-set">
+									Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+									whopper patty, Add Tender crisp patty and more...
+								</div>
+								<div class="dishes-main__footer">
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating" />
+												<input type="radio" class="rating__item" value="2" name="rating" />
+												<input type="radio" class="rating__item" value="3" name="rating" />
+												<input type="radio" class="rating__item" value="4" name="rating" />
+												<input type="radio" class="rating__item" value="5" name="rating" />
+											</div>
+										</div>
+									</div>
+									<div class="dishes-main__views">12</div>
+									<a href="#" class="dishes-main__button button">order</a>
+								</div>
+							</div>
+						</div>
+						<div class="dishes-main__card">
+							<a href="#" class="dishes-main__picture">
+								<picture><source srcset="img/dinner_04.webp" type="image/webp"><img src="img/dinner_04.png" alt="фото блюда" /></picture>
+							</a>
+							<div class="dishes-main__text-block">
+								<h3 class="dishes-main__title-item">Featured Meal</h3>
+								<div class="dishes-main__served">
+									Served with french fries + drink
+								</div>
+								<div class="dishes-main__dinner-set">
+									Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+									whopper patty, Add Tender crisp patty and more...
+								</div>
+								<div class="dishes-main__footer">
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating" />
+												<input type="radio" class="rating__item" value="2" name="rating" />
+												<input type="radio" class="rating__item" value="3" name="rating" />
+												<input type="radio" class="rating__item" value="4" name="rating" />
+												<input type="radio" class="rating__item" value="5" name="rating" />
+											</div>
+										</div>
+									</div>
+									<div class="dishes-main__views">12</div>
+									<a href="#" class="dishes-main__button button">order</a>
+								</div>
+							</div>
+						</div>
+						<div class="dishes-main__card">
+							<a href="#" class="dishes-main__picture">
+								<picture><source srcset="img/dinner_05.webp" type="image/webp"><img src="img/dinner_05.png" alt="фото блюда" /></picture>
+							</a>
+							<div class="dishes-main__text-block">
+								<h3 class="dishes-main__title-item">Featured Meal</h3>
+								<div class="dishes-main__served">
+									Served with french fries + drink
+								</div>
+								<div class="dishes-main__dinner-set">
+									Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+									whopper patty, Add Tender crisp patty and more...
+								</div>
+								<div class="dishes-main__footer">
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating" />
+												<input type="radio" class="rating__item" value="2" name="rating" />
+												<input type="radio" class="rating__item" value="3" name="rating" />
+												<input type="radio" class="rating__item" value="4" name="rating" />
+												<input type="radio" class="rating__item" value="5" name="rating" />
+											</div>
+										</div>
+									</div>
+									<div class="dishes-main__views">12</div>
+									<a href="#" class="dishes-main__button button">order</a>
+								</div>
+							</div>
+						</div>
+						<div class="dishes-main__card">
+							<a href="#" class="dishes-main__picture">
+								<picture><source srcset="img/dinner_06.webp" type="image/webp"><img src="img/dinner_06.png" alt="фото блюда" /></picture>
+							</a>
+							<div class="dishes-main__text-block">
+								<h3 class="dishes-main__title-item">Featured Meal</h3>
+								<div class="dishes-main__served">
+									Served with french fries + drink
+								</div>
+								<div class="dishes-main__dinner-set">
+									Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+									whopper patty, Add Tender crisp patty and more...
+								</div>
+								<div class="dishes-main__footer">
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating" />
+												<input type="radio" class="rating__item" value="2" name="rating" />
+												<input type="radio" class="rating__item" value="3" name="rating" />
+												<input type="radio" class="rating__item" value="4" name="rating" />
+												<input type="radio" class="rating__item" value="5" name="rating" />
+											</div>
+										</div>
+									</div>
+									<div class="dishes-main__views">12</div>
+									<a href="#" class="dishes-main__button button">order</a>
+								</div>
+							</div>
+						</div>
+						<div class="dishes-main__card">
+							<a href="#" class="dishes-main__picture">
+								<picture><source srcset="img/dinner_07.webp" type="image/webp"><img src="img/dinner_07.png" alt="фото блюда" /></picture>
+							</a>
+							<div class="dishes-main__text-block">
+								<h3 class="dishes-main__title-item">Featured Meal</h3>
+								<div class="dishes-main__served">
+									Served with french fries + drink
+								</div>
+								<div class="dishes-main__dinner-set">
+									Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+									whopper patty, Add Tender crisp patty and more...
+								</div>
+								<div class="dishes-main__footer">
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating" />
+												<input type="radio" class="rating__item" value="2" name="rating" />
+												<input type="radio" class="rating__item" value="3" name="rating" />
+												<input type="radio" class="rating__item" value="4" name="rating" />
+												<input type="radio" class="rating__item" value="5" name="rating" />
+											</div>
+										</div>
+									</div>
+									<div class="dishes-main__views">12</div>
+									<a href="#" class="dishes-main__button button">order</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main__chefs chefs-main">
+				<div class="chefs-main__container">
+					<div class="dishes-main__title title">
+						<h2 class="title__background">chefs</h2>
+						<div class="title__main">This month's chefs</div>
+					</div>
+					<div class="chefs-main__items">
+						<div class="chefs-main__item">
+							<a href="#" class="chefs-main__person">
+								<div class="chefs-main__avatar">
+									<picture><source srcset="img/chef_01.webp" type="image/webp"><img src="img/chef_01.png" alt="фото шефа"></picture>
+								</div>
+								<div class="chefs-main__info">
+									<div class="chefs-main__name">Gregory Flores</div>
+									<div class="chefs-main__status">Chef of the cold</div>
+								</div>
+							</a>
+							<div class="chefs-main__gallery">
+								<a href="#" class="chefs-main__food-photo ">
+									<picture><source srcset="img/chef_01-dish.webp" type="image/webp"><img src="img/chef_01-dish.png" alt="фото вирменного блюда шефа"></picture>
+								</a>
+								<a href="#" class="chefs-main__food-photo">
+									<picture><source srcset="img/chef_01-dish-2.webp" type="image/webp"><img src="img/chef_01-dish-2.png" alt="фото вирменного блюда шефа"></picture>
+								</a>
+								<a href="#" class="chefs-main__food-photo">
+									<picture><source srcset="img/chef_01-dish-3.webp" type="image/webp"><img src="img/chef_01-dish-3.png" alt="фото вирменного блюда шефа"></picture>
+								</a>
+							</div>
+						</div>
+						<div class="chefs-main__item">
+							<a href="#" class="chefs-main__person">
+								<div class="chefs-main__avatar">
+									<picture><source srcset="img/chef_02.webp" type="image/webp"><img src="img/chef_02.png" alt="фото шефа"></picture>
+								</div>
+								<div class="chefs-main__info">
+									<div class="chefs-main__name">Gregory Flores</div>
+									<div class="chefs-main__status">Chef of the cold</div>
+								</div>
+							</a>
+							<div class="chefs-main__gallery">
+								<a href="#" class="chefs-main__food-photo ">
+									<picture><source srcset="img/chef_02-dish.webp" type="image/webp"><img src="img/chef_02-dish.png" alt="фото вирменного блюда шефа"></picture>
+								</a>
+								<a href="#" class="chefs-main__food-photo">
+									<picture><source srcset="img/chef_02-dish-2.webp" type="image/webp"><img src="img/chef_02-dish-2.png" alt="фото вирменного блюда шефа"></picture>
+								</a>
+								<a href="#" class="chefs-main__food-photo">
+									<picture><source srcset="img/chef_02-dish-3.webp" type="image/webp"><img src="img/chef_02-dish-3.png" alt="фото вирменного блюда шефа"></picture>
+								</a>
+							</div>
+						</div>
+						<div class="chefs-main__item">
+							<a href="#" class="chefs-main__person">
+								<div class="chefs-main__avatar">
+									<picture><source srcset="img/chef_03.webp" type="image/webp"><img src="img/chef_03.png" alt="фото шефа"></picture>
+								</div>
+								<div class="chefs-main__info">
+									<div class="chefs-main__name">Gregory Flores</div>
+									<div class="chefs-main__status">Chef of the cold</div>
+								</div>
+							</a>
+							<div class="chefs-main__gallery">
+								<a href="#" class="chefs-main__food-photo ">
+									<picture><source srcset="img/chef_03-dish.webp" type="image/webp"><img src="img/chef_03-dish.png" alt="фото вирменного блюда шефа"></picture>
+								</a>
+								<a href="#" class="chefs-main__food-photo">
+									<picture><source srcset="img/chef_03-dish-2.webp" type="image/webp"><img src="img/chef_03-dish-2.png" alt="фото вирменного блюда шефа"></picture>
+								</a>
+								<a href="#" class="chefs-main__food-photo">
+									<picture><source srcset="img/chef_03-dish-3.webp" type="image/webp"><img src="img/chef_03-dish-3.png" alt="фото вирменного блюда шефа"></picture>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main__recipes-from-our-chefs recipes-main">
+				<div class="recipes-main__container">
+					<div class="dishes-main__title title">
+						<h2 class="title__background">recipes</h2>
+						<div class="title__main">Recipes From Our Chefs</div>
+					</div>
+					<div class="recipes-main__content">
+						<a href="#" class="recipes-main__big">
+							<div class="recipes-main__background-image">
+								<picture><source srcset="img/on_coals.webp" type="image/webp"><img src="img/on_coals.png" alt="демонстрация продукта"></picture>
+							</div>
+
+							<div class="recipes-main__label-big label">breakfast</div>
+							<div class="recipes-main__data-big data-recipes">07 Jan 2016</div>
+							<div class="recipes-main__text-big">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							</div>
+							<div class="recipes-main__name">Jason Keller</div>
+							<div class="recipes-main__coments-and-veiews comments-and-views">
+								<div class="comments-and-views__views">275</div>
+								<div class="comments-and-views__comments">12</div>
+							</div>
+						</a>
+						<a href="#" class="recipes-main__small">
+							<div class="recipes-main__image-small">
+								<picture><source srcset="img/dinner.webp" type="image/webp"><img src="img/dinner.png" alt="фото блюда"></picture>
+							</div>
+							<div class="recipes-main__text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</div>
+							<div class="recipes-main__time-and-data">
+								<div class="recipes-main__label label">breakfast</div>
+								<div class="recipes-main__data data-recipes">07 Jan 2016</div>
+							</div>
+							<div class="recipes-main__coments-and-veiews comments-and-views">
+								<div class="comments-and-views__views">275</div>
+								<div class="comments-and-views__comments">12</div>
+							</div>
+						</a>
+						<a href="#" class="recipes-main__small">
+							<div class="recipes-main__image-small">
+								<picture><source srcset="img/dinner.webp" type="image/webp"><img src="img/dinner.png" alt="фото блюда"></picture>
+							</div>
+							<div class="recipes-main__text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</div>
+							<div class="recipes-main__time-and-data">
+								<div class="recipes-main__label label">breakfast</div>
+								<div class="recipes-main__data data-recipes">07 Jan 2016</div>
+							</div>
+							<div class="recipes-main__coments-and-veiews comments-and-views">
+								<div class="comments-and-views__views">275</div>
+								<div class="comments-and-views__comments">12</div>
+							</div>
+						</a>
+						<a href="#" class="recipes-main__small">
+							<div class="recipes-main__image-small">
+								<picture><source srcset="img/dinner.webp" type="image/webp"><img src="img/dinner.png" alt="фото блюда"></picture>
+							</div>
+							<div class="recipes-main__text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</div>
+							<div class="recipes-main__time-and-data">
+								<div class="recipes-main__label label">breakfast</div>
+								<div class="recipes-main__data data-recipes">07 Jan 2016</div>
+							</div>
+							<div class="recipes-main__coments-and-veiews comments-and-views">
+								<div class="comments-and-views__views">275</div>
+								<div class="comments-and-views__comments">12</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="main__we-in-social social-main">
+				<div class="social-main__container">
+					<div class="social-main__title title">
+						<h2 class="title__background">social</h2>
+						<div class="title__main">We in Social</div>
+					</div>
+					<div class="social-main__items">
+						<div class="social-main__item">
+							<div class="social-main__header">
+								<a href="#" class="social-main__important">
+									<div class="social-main__logo">
+										<img src="img/twitter.svg" alt="логотип социальной сети">
+									</div>
+									<h4 class="social-main__card-title">twitter</h4>
+								</a>
+								<a href="#" class="social-main__button button">follow us</a>
+							</div>
+							<div class="social-main__content">
+								<div class="social-main__data">24 Jun at 16:20 pm</div>
+								<div data-simplebar class="social-main__text">
+									<div class="social-main__filling">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+									</div>
+								</div>
+								<div class="social-main__tag">@DennisFerguson</div>
+							</div>
+
+						</div>
+						<div class="social-main__item">
+							<div class="social-main__header">
+								<a href="#" class="social-main__important">
+									<div class="social-main__logo">
+										<img src="img/instagram.svg" alt="логотип социальной сети">
+									</div>
+									<h4 class="social-main__card-title">instsgram</h4>
+								</a>
+								<a href="#" class="social-main__button button">follow us</a>
+							</div>
+							<div data-simplebar class="social-main__special-instagram-content">
+								<div class="social-main__insta-set">
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_01.webp" type="image/webp"><img src="img/inst-dish_01.png" alt="фото еды из инстаграма"></picture>
+									</a>
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_02.webp" type="image/webp"><img src="img/inst-dish_02.png" alt="фото еды из инстаграма"></picture>
+									</a>
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_03.webp" type="image/webp"><img src="img/inst-dish_03.png" alt="фото еды из инстаграма"></picture>
+									</a>
+								</div>
+								<div class="social-main__insta-set">
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_04.webp" type="image/webp"><img src="img/inst-dish_04.png" alt="фото еды из инстаграма"></picture>
+									</a>
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_05.webp" type="image/webp"><img src="img/inst-dish_05.png" alt="фото еды из инстаграма"></picture>
+									</a>
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_06.webp" type="image/webp"><img src="img/inst-dish_06.png" alt="фото еды из инстаграма"></picture>
+									</a>
+								</div>
+								<div class="social-main__insta-set">
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_01.webp" type="image/webp"><img src="img/inst-dish_01.png" alt="фото еды из инстаграма"></picture>
+									</a>
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_02.webp" type="image/webp"><img src="img/inst-dish_02.png" alt="фото еды из инстаграма"></picture>
+									</a>
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_03.webp" type="image/webp"><img src="img/inst-dish_03.png" alt="фото еды из инстаграма"></picture>
+									</a>
+								</div>
+								<div class="social-main__insta-set">
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_04.webp" type="image/webp"><img src="img/inst-dish_04.png" alt="фото еды из инстаграма"></picture>
+									</a>
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_05.webp" type="image/webp"><img src="img/inst-dish_05.png" alt="фото еды из инстаграма"></picture>
+									</a>
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_06.webp" type="image/webp"><img src="img/inst-dish_06.png" alt="фото еды из инстаграма"></picture>
+									</a>
+								</div>
+								<div class="social-main__insta-set">
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_01.webp" type="image/webp"><img src="img/inst-dish_01.png" alt="фото еды из инстаграма"></picture>
+									</a>
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_02.webp" type="image/webp"><img src="img/inst-dish_02.png" alt="фото еды из инстаграма"></picture>
+									</a>
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_03.webp" type="image/webp"><img src="img/inst-dish_03.png" alt="фото еды из инстаграма"></picture>
+									</a>
+								</div>
+								<div class="social-main__insta-set">
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_04.webp" type="image/webp"><img src="img/inst-dish_04.png" alt="фото еды из инстаграма"></picture>
+									</a>
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_05.webp" type="image/webp"><img src="img/inst-dish_05.png" alt="фото еды из инстаграма"></picture>
+									</a>
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_06.webp" type="image/webp"><img src="img/inst-dish_06.png" alt="фото еды из инстаграма"></picture>
+									</a>
+								</div>
+								<div class="social-main__insta-set">
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_01.webp" type="image/webp"><img src="img/inst-dish_01.png" alt="фото еды из инстаграма"></picture>
+									</a>
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_02.webp" type="image/webp"><img src="img/inst-dish_02.png" alt="фото еды из инстаграма"></picture>
+									</a>
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_03.webp" type="image/webp"><img src="img/inst-dish_03.png" alt="фото еды из инстаграма"></picture>
+									</a>
+								</div>
+								<div class="social-main__insta-set">
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_04.webp" type="image/webp"><img src="img/inst-dish_04.png" alt="фото еды из инстаграма"></picture>
+									</a>
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_05.webp" type="image/webp"><img src="img/inst-dish_05.png" alt="фото еды из инстаграма"></picture>
+									</a>
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_06.webp" type="image/webp"><img src="img/inst-dish_06.png" alt="фото еды из инстаграма"></picture>
+									</a>
+								</div>
+								<div class="social-main__insta-set">
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_01.webp" type="image/webp"><img src="img/inst-dish_01.png" alt="фото еды из инстаграма"></picture>
+									</a>
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_02.webp" type="image/webp"><img src="img/inst-dish_02.png" alt="фото еды из инстаграма"></picture>
+									</a>
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_03.webp" type="image/webp"><img src="img/inst-dish_03.png" alt="фото еды из инстаграма"></picture>
+									</a>
+								</div>
+								<div class="social-main__insta-set">
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_04.webp" type="image/webp"><img src="img/inst-dish_04.png" alt="фото еды из инстаграма"></picture>
+									</a>
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_05.webp" type="image/webp"><img src="img/inst-dish_05.png" alt="фото еды из инстаграма"></picture>
+									</a>
+									<a href="#" class="social-main__instagram-item">
+										<picture><source srcset="img/inst-dish_06.webp" type="image/webp"><img src="img/inst-dish_06.png" alt="фото еды из инстаграма"></picture>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="social-main__item">
+							<div class="social-main__header">
+								<a href="#" class="social-main__important">
+									<div class="social-main__logo">
+										<img src="img/facebook.svg" alt="логотип социальной сети">
+									</div>
+									<h4 class="social-main__card-title">facebook</h4>
+								</a>
+								<a href="#" class="social-main__button button">follow us</a>
+							</div>
+							<div class="social-main__content">
+								<div class="social-main__data">26 Jun at 16:20 pm</div>
+								<div data-simplebar class="social-main__text-facebook">
+									<div class="social-main__filling">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__special-down-container">
+				<div class="footer__items">
+					<a href="#" class="footer__item">
+						<div class="footer__icon">
+							<img src="img/clock.svg" alt="иконка информации" />
+						</div>
+						<div class="footer__info">
+							Today 10:00 am - 7:00 pm
+						</div>
+						<div class="footer__action">Working hours</div>
+					</a>
+					<a href="#" class="footer__item">
+						<div class="footer__icon">
+							<img src="img/direction.svg" alt="иконка информации" />
+						</div>
+						<div class="footer__info">Velyka Vasylkivska 100</div>
+						<div class="footer__action">Get Directions</div>
+					</a>
+					<a href="tel:+380638332415" class="footer__item">
+						<div class="footer__icon">
+							<img src="img/phone.svg" alt="иконка информации" />
+						</div>
+						<div class="footer__info">+38 (063)833 24 15</div>
+						<div class="footer__action">Call Online</div>
+					</a>
+				</div>
+			</div>
+			<div class="footer__copyright">
+				<a href="#" class="footer__logo">
+					<img src="img/logo.svg" alt="часть логотипа">
+					<img src="img/logo-text.svg" alt="часть логотипа">
+				</a>
+				<div class="footer__copy">© Designed by Yellow Snow. All Rights Reserved. </div>
+
+
+			</div>
+
+		</footer>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+	<script src="js/app.min.js?_v=20220528183147"></script>
+</body>
+
+</html>
